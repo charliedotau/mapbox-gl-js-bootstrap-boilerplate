@@ -19,9 +19,6 @@
      <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.1.0/mapbox-gl-geocoder.min.js'></script>
     <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.1.0/mapbox-gl-geocoder.css' type='text/css' />
 
-    <!-- local code to load and style the map -->
-    <script src="my-mapbox.js"></script>
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -99,21 +96,8 @@
       </footer>
 
     </div> <!-- /container -->
-
-    <script>
-      $(document).ready(init);
-
-      function init(jQuery) {
-        CurrentYear();
-        initMap();
-      }
-
-      function CurrentYear() {
-        var thisYear = new Date().getFullYear()
-        $("#currentYear").text(thisYear);
-      }
-
-      </script>
-
+    
+  <!-- local code to load and style the map -->
+  <script src="my-mapbox.js"></script>
   </body>
 </html>

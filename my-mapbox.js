@@ -1,5 +1,25 @@
 // Map via Mapbox GL
 
+$(document).ready(init);
+
+function init(jQuery) {
+  CurrentYear();
+  initMap();
+
+  /*
+  // user clicks some button
+  $('#someButton').on('click', function () {
+      // do something here
+  });
+
+  */
+}
+
+function CurrentYear() {
+  var thisYear = new Date().getFullYear()
+  $("#currentYear").text(thisYear);
+}
+
 var mapCoordinates = [42.885441,-78.878464];
 var mapZoom = 11;
 
